@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Opravila</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+       <style>
+            body{
+                background-color: whitesmoke;
+            }
+            header, footer{
+                background-color: #B7D1DA;
+            }
+            h1,h5{
+                color: #2B4162;
+            }           
+            
+        </style>
+    </head>
+    <body>
+        <header class="container-fluid text-center p-3">
+            <h1> Opravila </h1> 
+        </header>
+        <div class="container-fluid">
+        <div class="row text-center mt-4 offset-xl-2 offset-lg-0">
+            <div class="col-xl-5 col-md-6 col-sm-12">
+                <div class="input-group mb-3">          
+                    <input type="text" class="input_category form-control" placeholder="Vnesi ime kategorije">     
+                    <div class="input-group-append"> 
+                        <button class="add_btn btn btn-primary"><i class="fa fa-plus"></i></button>
+                        <button type="button" class="remove_btn btn btn-danger"><i class="fa fa-trash"></i></button>
+                    </div> 
+                </div> 
+
+                <div class="categories">
+                    <ul class="list-group text-left"></ul>
+                </div>
+            </div>
+        
+           <hr color="gray" width="80%" class="d-md-none mt-5 mb-5">
+           
+            <div class="col-xl-5 col-md-6 col-sm-12 text-left">
+                
+                <div class="input-group mb-3">  
+                <input type="text" class="input_entry form-control" placeholder="Vnesi opis za nov vnos">
+                <div class="input-group-append"> 
+                <button class="add_entry_btn btn btn-primary"><i class="fa fa-plus"></i></button>
+                </div>
+                </div>
+        <table class="table_entries table table-hover table-bordered table-striped mt-2">
+            <thead class="thead-dark"><tr><th>ID</th><th>Opis</th><th>Kategorija</th><th>Datum</th></tr></thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <button class="remove_entry_btn btn btn-danger ml-md-0 ml-2"><i class="fa fa-trash"></i></button>
+            </div>
+        </div>
+    </div>
+        <footer class="container-fluid text-center p-3 mt-5">
+            <h5> USS Vaja 5 - jQuery in Bootstrap </h5>
+        </footer>
+        
+        <script src="./script.js"></script>
+    </body>
+</html>
